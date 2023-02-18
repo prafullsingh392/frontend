@@ -19,8 +19,12 @@
 }
 
 .history{
+    display: flex;
     width: 600px;
     margin: 0 auto;
+    background: white;
+    padding-top: 10px;
+    border: 1px solid #efeff3;
     .search-term{
         width: 30%; 
         float:left;
@@ -31,6 +35,10 @@
         float:right;
            
     } 
+
+    .no-result{
+        padding: 20px 0;
+    }
 }
 
 .search-result{
@@ -39,9 +47,8 @@
     margin: 0 auto;
     background: white;
     .search-detail{
-        border: 1px solid #eeeef3;
         width: 400px;
-        height: 200px;
+        height: 190px;
 
         .user-image{
             width: 50%; 
