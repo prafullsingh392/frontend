@@ -1,0 +1,65 @@
+.header{
+    width: 600px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    line-height: 50px;
+    border: 1px solid #eeeef3;
+    height: 50px;
+
+    .search-term{
+        width: 30%; 
+        float:left;
+        padding-left: 5%;
+    }
+    .search-result{
+        width: 65%; 
+        float:right;
+           
+    }    
+}
+
+.history{
+    width: 600px;
+    margin: 0 auto;
+    .search-term{
+        width: 30%; 
+        float:left;
+        padding-left: 5%;
+    }
+    .search-result{
+        width: 65%; 
+        float:right;
+           
+    } 
+}
+
+.search-result{
+    margin-top: 60px;
+    width: 320px;
+    margin: 0 auto;
+    background: white;
+    .search-detail{
+        border: 1px solid #eeeef3;
+        width: 400px;
+        height: 200px;
+
+        .user-image{
+            width: 50%; 
+            float:left;
+            img{
+                display: block;
+                width: 150px;
+                margin: 20px;
+            }
+        }
+        .user-name{
+            width: 50%; 
+            float:right;
+            label{
+                display: block;
+            }
+            
+        }
+        
+    }
+}

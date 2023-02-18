@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: 'history', loadChildren: () => import('./modules/history/history.module').then(m => m.HistoryModule) },
   { path: 'home', loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule) },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/history', pathMatch: 'full' },
 ];
 
 @NgModule({
