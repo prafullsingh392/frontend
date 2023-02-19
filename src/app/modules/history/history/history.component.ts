@@ -3,6 +3,7 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/internal/Observable';
 import { History } from 'src/app/models/history.model';
 import * as appReducer from '../../../store/app.reducer'
+import * as HistoryActions from '../../../store/actions/history.actions';
 
 @Component({
   selector: 'app-history',
@@ -22,6 +23,10 @@ export class HistoryComponent implements OnInit {
         //console.log(this.historyList)
       }
     )
+  }
+
+  clearHistory(){
+    this.store.dispatch(new HistoryActions.ClearHistory())
   }
 
 }

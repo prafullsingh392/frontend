@@ -18,7 +18,12 @@ export function historyReducer(
             return {
                 ...state,
                 searches: [...state.searches, (action as HistoryActions.NewSearch).payload]
-            };        
+            };  
+        case HistoryActions.CLEAR_HISTORY:
+            return {
+                ...state,
+                searches:[]
+            }      
         default:
             return state;
     }
