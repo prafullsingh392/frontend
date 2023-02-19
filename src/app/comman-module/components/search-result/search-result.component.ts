@@ -10,6 +10,6 @@ export class SearchResultComponent {
   @Input() searchResults:User[] = []
   @Input() searchFlag:boolean = false
   constructor(){
-    console.log(this.searchResults)
+    //console.log(this.searchResults)
   }
 }
