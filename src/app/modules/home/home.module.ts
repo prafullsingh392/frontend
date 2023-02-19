@@ -5,6 +5,8 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home/home.component';
 import { MaterialeModule } from 'src/material.module';
 import { CommanModuleModule } from 'src/app/comman-module/comman-module.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -14,6 +16,8 @@ import { CommanModuleModule } from 'src/app/comman-module/comman-module.module';
   imports: [
     MaterialeModule,
     CommonModule,
+    FormsModule,
+    HttpClientModule,
     HomeRoutingModule,
     CommanModuleModule
   ]

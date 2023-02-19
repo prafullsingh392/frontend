@@ -6,6 +6,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GithubapisService } from './services/githubapis.service';
 import { MaterialeModule } from 'src/material.module';
 import { CommanModuleModule } from './comman-module/comman-module.module';
+import { StoreModule } from '@ngrx/store';
+import {reducers} from './store/app.reducer'
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,10 @@ import { CommanModuleModule } from './comman-module/comman-module.module';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpClientModule,
     AppRoutingModule,
+    StoreModule.forRoot(reducers),
     BrowserAnimationsModule,
     MaterialeModule,
     CommanModuleModule

@@ -5,12 +5,12 @@
                 <mat-form-field class="width" appearance="outline" >
                 <mat-label>Github User Name</mat-label>
                 <mat-icon matPrefix>search</mat-icon>
-                <input type="text" matInput placeholder="Ethan Linker">
+                <input type="text" [(ngModel)]="searchTerm" (change)="onKeywordChange()" name="search" [value]="searchTerm" matInput placeholder="Ethan Linker">
                 </mat-form-field>
             </form>
 
-            <button class="width search" mat-stroked-button>Search</button>
+            <button class="width search" (click)="onSearch()" mat-stroked-button>Search</button>
         </div>
 </div>
 
-<app-search-result></app-search-result>
+<app-search-result [searchFlag]="searchFlag" [searchResults]="searchResults"></app-search-result>

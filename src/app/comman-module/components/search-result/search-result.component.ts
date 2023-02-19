@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
+import { User } from 'src/app/models/user.model';
 
 @Component({
   selector: 'app-search-result',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./search-result.component.scss']
 })
 export class SearchResultComponent {
-
+  @Input() searchResults:User[] = []
+  @Input() searchFlag:boolean = false
+  constructor(){
+    console.log(this.searchResults)
+  }
 }
